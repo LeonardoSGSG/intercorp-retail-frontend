@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { ConsolidatedDataComponent } from './consolidated-data/consolidated-data';
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  standalone: true,
+  imports: [ConsolidatedDataComponent],
+  template: `<app-consolidated-data />`,
 })
-export class App {
-  protected title = 'intercorp-retail-frontend';
-}
+export class AppComponent {}
